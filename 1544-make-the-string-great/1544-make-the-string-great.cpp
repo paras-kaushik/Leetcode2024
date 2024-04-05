@@ -14,10 +14,10 @@ public:
         }
         string ans;
         while (!st.empty()) {
-            ans.push_back(st.top());
+            ans=st.top()+ans;
             st.pop();
         }
-        reverse(ans.begin(),ans.end());
+        
         return ans;
     }
 };
