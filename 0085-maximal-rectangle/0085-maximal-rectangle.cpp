@@ -46,9 +46,7 @@ public:
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++)
                 histogram[j] = matrix[i][j]=='0' ? 0 : histogram[j]+1;
-            
             ans=max(ans,largestRectangularAreaInHistogram(histogram));
-           // for(int& val:histogram) cout<<val<<" ";cout<<endl;
         }
         return ans;
     }
